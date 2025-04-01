@@ -6,6 +6,7 @@ class Login1Constants {
 
 class Login1Images {
   static final String logo = "assets/images/Logo.png";
+  static final String logoWhite = "assets/images/logo_white.png";
   static final String googleLogo = "assets/images/google.png";
   static final String facebookLogo = "assets/images/facebook.png";
 }
@@ -15,5 +16,5 @@ class Login1Colors {
   static final Color black = Color(0xFF1A1C1E);
   static final Color grey = Color(0xFF6C7277);
   static final Color white = Color(0xFFFFFFFF);
-  static final Color blue = Color(0xFF4D81E7);
+  static final Color blue = Color(0xFF1D61E7);
 }

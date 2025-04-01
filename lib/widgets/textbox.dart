@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/login1/common/app_styles.dart';
+import 'package:login_app/login1/common/login1_styles.dart';
 import 'package:login_app/login1/common/common.dart';
 
 class TextBox extends StatefulWidget {
@@ -23,7 +23,7 @@ class _TextBoxState extends State<TextBox> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(widget.label, style: AppStyles.label),
+        Text(widget.label, style: Login1Styles.label),
         SizedBox(height: 3),
         TextField(
           style: TextStyle(

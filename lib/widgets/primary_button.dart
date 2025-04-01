@@ -3,7 +3,8 @@ import 'package:login_app/login1/common/common.dart';
 
 class PrimaryButton extends StatefulWidget {
   final String label;
-  const PrimaryButton({required this.label, super.key});
+  final VoidCallback onPress;
+  const PrimaryButton({required this.label, required this.onPress, super.key});
 
   @override
   State<PrimaryButton> createState() => _PrimaryButtonState();
@@ -24,7 +25,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
                 gradient: LinearGradient(
                   colors: [
                     Login1Colors.blue,
-                    const Color.fromARGB(255, 8, 128, 227),
+                    const Color.fromARGB(255, 9, 96, 167),
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -37,7 +38,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
               padding: EdgeInsets.all(10),
               textStyle: TextStyle(color: Colors.white),
             ),
-            onPressed: () {},
+            onPressed: widget.onPress,
             child: Container(
               width: double.infinity,
               alignment: Alignment.center,

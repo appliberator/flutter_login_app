@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_app/login1/common/common.dart';
 
-class AppStyles {
+class Login1Styles {
   static final TextStyle title = TextStyle(
     fontFamily: "Inter",
     fontSize: 32,

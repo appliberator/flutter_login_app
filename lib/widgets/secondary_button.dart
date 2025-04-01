@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/login1/common/app_styles.dart';
+import 'package:login_app/login1/common/login1_styles.dart';
 import 'package:login_app/login1/common/common.dart';
 
 class SecondaryButton extends StatefulWidget {
   final String label;
   final Widget? prefixIcon;
-  const SecondaryButton({required this.label, this.prefixIcon, super.key});
+  final VoidCallback onPress;
+  const SecondaryButton({
+    required this.label,
+    required this.onPress,
+    this.prefixIcon,
+    super.key,
+  });
 
   @override
   State<StatefulWidget> createState() {
@@ -22,7 +28,7 @@ class _SecondaryButtonState extends State<SecondaryButton> {
         side: BorderSide(color: Login1Colors.border, width: 1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-      onPressed: () {},
+      onPressed: widget.onPress,
       child: Container(
         height: 48,
         alignment: Alignment.center,
@@ -34,7 +40,7 @@ class _SecondaryButtonState extends State<SecondaryButton> {
             SizedBox(width: 10),
             Text(
               widget.label,
-              style: AppStyles.label.copyWith(
+              style: Login1Styles.label.copyWith(
                 color: Login1Colors.black,
                 fontWeight: FontWeight.bold,
               ),

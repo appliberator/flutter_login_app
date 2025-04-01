@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/login1/common/app_styles.dart';
+import 'package:login_app/login1/common/login1_styles.dart';
 import 'package:login_app/login1/common/common.dart';
 
 class Saperator extends StatelessWidget {
@@ -20,7 +20,7 @@ class Saperator extends StatelessWidget {
           width: 40,
           alignment: Alignment.center,
           decoration: BoxDecoration(color: Colors.white),
-          child: Text(label, style: AppStyles.label),
+          child: Text(label, style: Login1Styles.label),
         ),
       ],
     );
